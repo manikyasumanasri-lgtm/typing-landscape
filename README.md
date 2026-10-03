@@ -73,3 +73,14 @@ Required Jenkins Plugins:
 - **Port 8081 already in use**: Stop any existing containers or change the deployed port in the `Jenkinsfile`.
 - **Webhook not firing**: Ensure ngrok is running and the URL matches exactly with `/github-webhook/`.
 - **curl not found in Jenkins**: Modify the `Health Check` stage to use a container with curl or install it.
+
+
+## Summary of Work
+
+For this task, I built a 'Typing Landscape' web application. The core logic includes:
+- **Backend:** A Flask API (pp.py) to serve the UI and calculate Typing Speed (WPM) and Level based on characters typed.
+- **Frontend:** Vanilla JS, HTML, and CSS (static/, 	emplates/) that dynamically draw a landscape on an HTML5 canvas. The landscape evolves (grass -> trees -> houses -> buildings -> night sky) based on the user's typing speed and total character count.
+- **Testing:** Implemented unit tests for the backend logic using pytest (	est_app.py).
+- **Deployment:** Added a Dockerfile for containerization and a Jenkinsfile for a CI/CD pipeline.
+
+*Note: No external datasets or screenshots were required for this implementation.*
